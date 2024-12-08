@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Input;
 
 namespace UEditorApp
 {
@@ -7,20 +8,28 @@ namespace UEditorApp
         public MainWindow()
         {
             InitializeComponent();
-            // Load the Home page by default
+            // Set the default page to HomePage
             MainFrame.Navigate(new HomePage());
         }
 
-        // Navigate to HomePage when "Home" is clicked
-        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        private void HomeButton_Click(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Navigate(new HomePage());
         }
 
-        // Navigate to InstallPage when "Install" is clicked
-        private void InstallButton_Click(object sender, RoutedEventArgs e)
+        private void InstallButton_Click(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Navigate(new InstallPage());
+        }
+
+        private void CreditsButton_Click(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Navigate(new CreditsPage());
+        }
+
+        private void ChatButton_Click(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Navigate(new ChatBoxPage());
         }
     }
 }

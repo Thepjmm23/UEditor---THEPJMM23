@@ -6,13 +6,19 @@
         <!-- Top Navigation Bar -->
         <DockPanel Background="White" Height="50" VerticalAlignment="Top">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
-                <TextBlock Text="Home" FontSize="14" Margin="10,0" Foreground="Gray" Cursor="Hand" MouseLeftButtonDown="HomeButton_Click"/>
-                <TextBlock Text="Install" FontSize="14" Margin="10,0" Foreground="Black" FontWeight="Bold" Cursor="Hand" MouseLeftButtonDown="InstallButton_Click"/>
+                <TextBlock Text="Home" FontSize="14" Margin="10,0" Foreground="Gray" Cursor="Hand" 
+                           MouseLeftButtonDown="HomeButton_Click"/>
+                <TextBlock Text="Install" FontSize="14" Margin="10,0" Foreground="Gray"  Cursor="Hand" 
+                           MouseLeftButtonDown="InstallButton_Click"/>
                 <TextBlock Text="Games" FontSize="14" Margin="10,0" Foreground="Gray"/>
+                <TextBlock Text="Credits" FontSize="14" Foreground="Gray" Cursor="Hand" 
+                
+                           MouseLeftButtonDown="CreditsButton_Click"/>
+                <TextBlock FontSize="14" Foreground="Gray" Cursor="Hand" MouseLeftButtonDown="ChatButton_Click" Text=" Chat"/>
             </StackPanel>
         </DockPanel>
 
         <!-- Frame to display Pages -->
-        <Frame Name="MainFrame" Margin="0,50,0,0"/>
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,50,0,0"/>
     </Grid>
 </Window>

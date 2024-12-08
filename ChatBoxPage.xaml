@@ -1,0 +1,32 @@
+﻿<Page x:Class="UEditorApp.ChatBoxPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="ChatBoxPage">
+    <Grid Background="#F8F8F8">
+        <!-- Chat Header -->
+        <DockPanel Background="#4A5BD7" Height="50" VerticalAlignment="Top">
+            <TextBlock Text="Local Chatbox (this is not online)" FontSize="18" FontWeight="Bold" Foreground="White" 
+                       VerticalAlignment="Center" Margin="10,0"/>
+        </DockPanel>
+
+        <!-- Chat Area -->
+        <Grid Margin="10,60,10,70">
+            <Border Background="White" CornerRadius="10" BorderBrush="#DDD" BorderThickness="1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Name="ChatScrollViewer">
+                    <StackPanel Name="ChatMessagesPanel" Margin="10">
+                        <!-- Chat messages will be dynamically added here -->
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+
+        <!-- Message Input Area -->
+        <DockPanel VerticalAlignment="Bottom" Height="60" Background="White">
+            <TextBox Name="MessageTextBox" Width="600" Height="40" Margin="10" VerticalAlignment="Center" 
+                     FontSize="14" BorderBrush="#DDD" BorderThickness="1" KeyDown="MessageTextBox_KeyDown"/>
+            <Button Content="Send" Width="80" Height="40" Margin="0,10,10,10" VerticalAlignment="Center" 
+                    Background="#4A5BD7" Foreground="White" BorderBrush="#4A5BD7" 
+                    Click="SendButton_Click"/>
+        </DockPanel>
+    </Grid>
+</Page>

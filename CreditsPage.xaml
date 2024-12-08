@@ -1,0 +1,20 @@
+﻿<Page x:Class="UEditorApp.CreditsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="CreditsPage">
+    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Height="182">
+        <TextBlock FontSize="30" FontWeight="Bold" Foreground="#4A5BD7" Height="53" Width="303">
+            <Run Text="          "/>
+            <Run Text="CREDITS"/>
+        </TextBlock>
+        <TextBlock FontSize="14" Foreground="#888" Height="48">
+            <Run Text="The real program Was made by the UEditor team! "/>
+            <LineBreak/>
+            <Run Text="This remake in visual studio was made By Thepjmm23"/>
+        </TextBlock>
+
+        <!-- Join Discord Button -->
+        <Button Content="Join the Discord" Width="200" Height="38" FontSize="16" Background="#7289DA" Foreground="White" 
+                BorderBrush="#7289DA" HorizontalAlignment="Center" Click="JoinDiscordButton_Click"/>
+    </StackPanel>
+</Page>
