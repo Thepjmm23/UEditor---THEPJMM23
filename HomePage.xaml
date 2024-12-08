@@ -1,0 +1,12 @@
+﻿<Page x:Class="UEditorApp.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="HomePage">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,60,0,0">
+        <TextBlock Text="This is UEditor" FontSize="30" FontWeight="Bold" Foreground="#4A5BD7" Height="53"/>
+        <TextBlock Text="Unleash your creativity with UEditor - universal level editing tool for Unreal Engine." FontSize="14" Foreground="#888" Height="34"/>
+
+        <!-- Join Discord Button -->
+        <Button Content="Join the Discord" Width="200" Height="40" FontSize="16" Background="#7289DA" Foreground="White" BorderBrush="#7289DA" HorizontalAlignment="Center" Click="JoinDiscordButton_Click"/>
+    </StackPanel>
+</Page>
